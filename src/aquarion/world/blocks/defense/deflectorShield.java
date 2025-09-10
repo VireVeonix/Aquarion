@@ -71,7 +71,7 @@ public class deflectorShield extends ForceProjector {
 
                 if (radius > 0.001F) {
                     Draw.color(Color.gray.a(0.1f), Color.white, Mathf.clamp(hit));
-                    if (Vars.renderer.animateShields) {
+                    if (Vars.Renderer.animateShields) {
                         Draw.z(Renderer.Layer.deflector);
                         Fill.poly(this.x, this.y, sides, radius, shieldRotation);
                     } else {
